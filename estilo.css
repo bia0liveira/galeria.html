@@ -1,0 +1,56 @@
+h1 {
+	color: red;
+}
+
+#fotoGrande {
+	border: 2px solid #c44569;
+	background-color: #cf6a87;
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+#fotoGrande img {
+	width: 500px;
+	border-radius: 20px;
+}
+
+#fotoGrande div{
+	color: white;
+	margin-top: 5px;
+
+}
+
+#miniaturas {
+	border: 2px solid #f78fb3;
+	background-color: #f8a5c2;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+}
+
+.miniatura {
+	border: 1px solid #e23d75;
+	background-color: #e23d75;
+	/* Espaço externo */
+	margin: 15px;
+	/*Espaçamento interno */
+	padding: 10px;
+}
+
+/*quando o mouse passar por cima*/
+.miniatura:hover {
+	background-color: rgba(248, 165, 194, 1);
+}
+
+.miniatura img {
+	width: 100%;
+	border-radius: 25%;
+	filter: grayscale(100%);
+	transition-duration: 1s;
+}
+
+.miniatura:hover img {
+	filter: grayscale(0%);
+	border-radius: 50%;
+}
